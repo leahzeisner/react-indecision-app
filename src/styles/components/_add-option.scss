@@ -1,0 +1,43 @@
+// Add Option
+.add-option {
+    display: flex;
+    flex-direction: column;
+    padding: $m-size;
+}
+
+.add-option__input {
+    background: $dark-blue;
+    border: none;
+    border-bottom: 0.3rem solid darken($dark-blue, 10%);
+    color: $off-white-purple;
+    flex-grow: 1;  // take up available space 
+    font-size: 2rem;
+    margin: 0 0 $s-size 0;
+    padding: $s-size;
+}
+
+
+
+
+// Add Option Error
+
+.add-option-error {
+    color: $off-white-purple;
+    font-style: italic;
+    margin: $m-size 0 0 0;
+    padding: 0 $m-size;
+}
+
+
+
+
+// apply these styles for widths >= 45rem
+@media (min-width: $desktop-breakpoint) {
+    .add-option {
+        flex-direction: row;
+    }
+
+    .add-option__input {
+        margin-right: $s-size;
+    }
+}
